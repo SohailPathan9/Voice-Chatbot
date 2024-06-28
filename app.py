@@ -9,7 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 
 api_key = os.getenv("OPENAI_API_KEY")
-
+# print("gdgs")
 client = openai.Client(api_key=api_key)
 
 def get_response(prompt):
